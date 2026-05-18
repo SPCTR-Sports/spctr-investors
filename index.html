@@ -112,43 +112,6 @@
       margin-top: 5px;
     }
 
-    /* Deck CTA */
-    .deck-cta {
-      display: flex;
-      align-items: center;
-      gap: 12px;
-      margin: 16px 16px 4px;
-      padding: 12px 14px;
-      background: linear-gradient(135deg, rgba(245,166,35,0.10), rgba(139,92,246,0.10));
-      border: 1px solid rgba(245,166,35,0.32);
-      border-radius: 8px;
-      color: var(--white);
-      text-decoration: none;
-      transition: background 0.15s, border-color 0.15s, transform 0.15s;
-    }
-    .deck-cta:hover {
-      background: linear-gradient(135deg, rgba(245,166,35,0.18), rgba(139,92,246,0.18));
-      border-color: var(--gold);
-      transform: translateY(-1px);
-    }
-    .deck-cta-icon {
-      font-family: var(--mono);
-      font-size: 18px;
-      font-weight: 600;
-      color: var(--gold);
-      line-height: 1;
-      flex-shrink: 0;
-    }
-    .deck-cta-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-    .deck-cta-label { font-size: 13px; font-weight: 700; letter-spacing: 0.02em; }
-    .deck-cta-meta {
-      font-family: var(--mono);
-      font-size: 10px;
-      color: var(--secondary);
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-    }
-
     /* TOC nav */
     .toc-nav {
       flex: 1;
@@ -606,14 +569,6 @@
       <div class="sidebar-tag">Investor FAQ</div>
     </div>
 
-    <a class="deck-cta" href="SPCTR-Deck-Q2-2026.pdf" download>
-      <span class="deck-cta-icon">↓</span>
-      <span class="deck-cta-text">
-        <span class="deck-cta-label">Download deck</span>
-        <span class="deck-cta-meta">PDF · Q2 2026</span>
-      </span>
-    </a>
-
     <nav class="toc-nav" aria-label="FAQ navigation">
 
       <!-- S1 — open by default -->
@@ -698,14 +653,13 @@
       <!-- Page header -->
       <header class="page-header">
         <h1 class="page-title">SPCTR Investor FAQ</h1>
-        <p class="page-subtitle">Twenty-two anticipated investor questions. SPCTR P&amp;L is the headline revenue frame throughout — Q18 is the only question that may reference integrated ecosystem numbers. Q6 + Q7 carry the structural economic argument that underpins the unit-of-account thesis.</p>
+        <p class="page-subtitle">Prepared answers to the questions investors ask first about SPCTR's pre-seed raise. Hypotheses are labeled where they appear — pre-seed honesty is the posture.</p>
       </header>
 
       <!-- Meta block -->
       <div class="meta-block">
         <span class="meta-frame-label">Revenue Frame</span>
-        <p>SPCTR P&amp;L (~$11M conservative / $36M mid / $90M stretch Y3 ARR) unless otherwise noted. Integrated ecosystem (~$22M / $64M / $152M) and standalone-no-Telegram (~$4M / $17M / $43M) figures live in companion docs and must not appear in this doc body without an explicit frame label.</p>
-        <p>About this document. Twenty-two anticipated investor questions with prepared answers. SPCTR P&amp;L is the headline revenue frame throughout; Q18 is the only question that may mention integrated ecosystem numbers. Q6 + Q7 carry the structural-economic argument that underpins the unit-of-account thesis.</p>
+        <p>All Y3 ARR figures in this document reference SPCTR's standalone P&amp;L: ~$11M conservative / $36M mid / $90M stretch (2029). Joint-venture ecosystem figures appear in Q18 and are paired with the equivalent SPCTR P&amp;L number for comparison.</p>
       </div>
 
       <!-- ══ SECTION 1 ══════════════════════════════════════ -->
@@ -965,7 +919,7 @@
         This is the only FAQ answer that pairs the integrated ecosystem number with the SPCTR P&amp;L equivalent. Elsewhere SPCTR P&amp;L is the only revenue frame.
       </div>
       <div class="answer">
-        <p>The integrated ecosystem Y3 mid is <strong>~$64M ARR across both entities</strong> (SPCTR + NXTE combined revenue flowing through the joint user journey). The SPCTR-side P&amp;L equivalent is <strong>~$36M Y3 mid</strong> — what SPCTR specifically captures after entity-attribution rules (rev-share splits on tournament rake, 60/40 SPCTR/NXTE on sponsorships, 80/20 SPCTR-share on data licensing, NC token loyalty 100% NXTE). Full band: integrated ecosystem ~$22M / $64M / $152M; SPCTR P&amp;L ~$11M / $36M / $90M. Investors are buying SPCTR P&amp;L — that is the number on the cap table and the P&amp;L. Integrated ecosystem is context for the size of the opportunity. Mixing the two has been the package's primary cognitive-load risk; this answer is the only place the FAQ pairs them.</p>
+        <p>The integrated ecosystem Y3 mid is <strong>~$64M ARR across both entities</strong> (SPCTR + NXTE combined revenue flowing through the joint user journey). The SPCTR-side P&amp;L equivalent is <strong>~$36M Y3 mid</strong> — what SPCTR specifically captures after entity-attribution rules (rev-share splits on tournament rake, 60/40 SPCTR/NXTE on sponsorships, 80/20 SPCTR-share on data licensing, NC token loyalty 100% NXTE). Full band: integrated ecosystem ~$22M / $64M / $152M; SPCTR P&amp;L ~$11M / $36M / $90M. Investors are buying SPCTR P&amp;L — that is the number on the cap table and the P&amp;L. Integrated ecosystem is context for the size of the opportunity.</p>
       </div>
       <div class="deep-dive">
         <span class="arr">→</span>See BMDD — Integrated Business Model (data room), "Revenue model layered by stage (Y1 → Y3 → Y5)" section.
@@ -1043,14 +997,8 @@
 
       <!-- ══ FOOTER ═══════════════════════════════════════════ -->
       <footer class="faq-footer">
-        <div class="faq-footer-heading">How to read this FAQ alongside the package</div>
-        <ul>
-          <li><strong>Headline numbers throughout: SPCTR P&amp;L</strong> (~$11M / $36M / $90M Y3 ARR).</li>
-          <li><strong>Q18 only:</strong> paired SPCTR P&amp;L + integrated ecosystem framing. All other questions use SPCTR P&amp;L only.</li>
-          <li><strong>Q6 + Q7</strong> carry the structural-economic argument that underpins the unit-of-account thesis — the foundational why beneath the product positioning.</li>
-          <li><strong>Honest acknowledgment of hypotheses</strong> is the posture — pre-seed-grade transparency, not closed-deck polish.</li>
-          <li><strong>Deep-dive references</strong> point to the BMDD documents and Thesis: International Mobile Esports in the data room for the full work behind each answer.</li>
-        </ul>
+        <div class="faq-footer-heading">Further reading</div>
+        <p>Each answer above ends with a pointer to the relevant companion document in the data room — the BMDD trilogy (Central Question, Integrated Business Model, Unit Economics), Thesis: International Mobile Esports, the Term-Sheet Framework, and the market research notes — for the full work behind the answer. Request data room access for follow-up diligence.</p>
       </footer>
 
     </div><!-- /content-inner -->
