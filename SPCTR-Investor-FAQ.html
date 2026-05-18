@@ -112,6 +112,43 @@
       margin-top: 5px;
     }
 
+    /* Deck CTA */
+    .deck-cta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 16px 16px 4px;
+      padding: 12px 14px;
+      background: linear-gradient(135deg, rgba(245,166,35,0.10), rgba(139,92,246,0.10));
+      border: 1px solid rgba(245,166,35,0.32);
+      border-radius: 8px;
+      color: var(--white);
+      text-decoration: none;
+      transition: background 0.15s, border-color 0.15s, transform 0.15s;
+    }
+    .deck-cta:hover {
+      background: linear-gradient(135deg, rgba(245,166,35,0.18), rgba(139,92,246,0.18));
+      border-color: var(--gold);
+      transform: translateY(-1px);
+    }
+    .deck-cta-icon {
+      font-family: var(--mono);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--gold);
+      line-height: 1;
+      flex-shrink: 0;
+    }
+    .deck-cta-text { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+    .deck-cta-label { font-size: 13px; font-weight: 700; letter-spacing: 0.02em; }
+    .deck-cta-meta {
+      font-family: var(--mono);
+      font-size: 10px;
+      color: var(--secondary);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+
     /* TOC nav */
     .toc-nav {
       flex: 1;
@@ -568,6 +605,14 @@
       <div class="sidebar-logo">SPCTR</div>
       <div class="sidebar-tag">Investor FAQ</div>
     </div>
+
+    <a class="deck-cta" href="SPCTR-Deck-Q2-2026.pdf" download>
+      <span class="deck-cta-icon">↓</span>
+      <span class="deck-cta-text">
+        <span class="deck-cta-label">Download deck</span>
+        <span class="deck-cta-meta">PDF · Q2 2026</span>
+      </span>
+    </a>
 
     <nav class="toc-nav" aria-label="FAQ navigation">
 
